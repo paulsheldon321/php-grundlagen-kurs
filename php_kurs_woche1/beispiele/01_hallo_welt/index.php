@@ -1,6 +1,4 @@
-<?php
-declare(strict_types=1);
-?><!doctype html>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
@@ -11,8 +9,7 @@ declare(strict_types=1);
 <body>
   <header><h1>Hallo PHP 8.4 👋</h1></header>
   <main class="container">
-    <p><?php echo "Hallo PHP 8.4!"; ?></p>
-    <p>Datum: <?php echo date("d.m.Y"); ?></p>
+    
   </main>
 </body>
 </html>

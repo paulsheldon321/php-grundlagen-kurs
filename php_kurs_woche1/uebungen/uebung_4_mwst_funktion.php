@@ -5,7 +5,8 @@ declare(strict_types=1);
  * 1) Schreibe eine Funktion brutto($netto, $mwst=0.19).
  * 2) Gib das Ergebnis formatiert (2 Nachkommastellen) aus.
  */
-?><!doctype html>
+?>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">

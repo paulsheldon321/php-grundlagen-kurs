@@ -7,7 +7,8 @@ declare(strict_types=1);
  * 3) Bonus: Eigene Formatierungsfunktion verwenden.
  */
 $posts = []; // TODO
-?><!doctype html>
+?>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">

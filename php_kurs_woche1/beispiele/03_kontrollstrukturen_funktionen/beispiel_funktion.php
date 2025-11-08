@@ -1,9 +1,8 @@
 <?php
 declare(strict_types=1);
-function brutto(float $netto, float $mwst = 0.19): float {
-  return $netto * (1 + $mwst);
-}
-?><!doctype html>
+
+?>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
@@ -14,7 +13,7 @@ function brutto(float $netto, float $mwst = 0.19): float {
 <body>
   <header><h1>Funktionen</h1></header>
   <main class="container">
-    <p>Netto: 100.00 € → Brutto: <?= number_format(brutto(100), 2, ",", ".") ?> €</p>
+    <p>Netto: 100.00 € → Brutto:  €</p>
   </main>
 </body>
 </html>

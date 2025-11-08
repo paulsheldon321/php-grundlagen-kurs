@@ -6,7 +6,8 @@ declare(strict_types=1);
  * 2) Speichere Daten in notes.json (file_put_contents).
  * 3) Lade und zeige die Notizen darunter an.
  */
-?><!doctype html>
+?>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
@@ -15,9 +16,9 @@ declare(strict_types=1);
   <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-<header><h1>Übung 3 – Notizspeicher</h1></header>
-<main class="container">
-  <!-- TODO: Formular + Ausgabe -->
-</main>
+  <header><h1>Übung 3 – Notizspeicher</h1></header>
+  <main class="container">
+    <!-- TODO: Formular + Ausgabe -->
+  </main>
 </body>
 </html>

@@ -6,7 +6,8 @@ declare(strict_types=1);
  * 2) Gib einen formatierten Satz aus (HTML + CSS).
  * 3) Bonus: Rechne ein Geburtsjahr aus.
  */
-?><!doctype html>
+?>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">

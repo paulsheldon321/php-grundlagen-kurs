@@ -8,7 +8,8 @@ declare(strict_types=1);
  */
 $punkte = 88; // TODO: anpassen oder via $_GET['p']
 $note = "";   // TODO: if/elseif/else setzen
-?><!doctype html>
+?>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">

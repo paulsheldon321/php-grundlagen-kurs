@@ -9,7 +9,8 @@ declare(strict_types=1);
 $name = $_POST["name"] ?? "";
 $msg  = $_POST["msg"] ?? "";
 $error = ""; // TODO: Validierung
-?><!doctype html>
+?>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">

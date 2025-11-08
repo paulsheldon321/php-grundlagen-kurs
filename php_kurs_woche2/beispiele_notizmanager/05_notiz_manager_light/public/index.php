@@ -1,9 +1,8 @@
 <?php
 declare(strict_types=1);
-require __DIR__ . "/../inc/tools.php";
-$path = __DIR__ . "/../data/notes.json";
-$notes = loadNotes($path);
-?><!doctype html>
+
+?>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
@@ -29,19 +28,7 @@ $notes = loadNotes($path);
 
   <section>
     <h2>Einträge</h2>
-    <?php if (!$notes): ?>
-      <p class="alert">Noch keine Notizen vorhanden.</p>
-    <?php endif; ?>
-    <?php foreach ($notes as $i => $n): ?>
-      <article class="post">
-        <h3><?= safe($n["title"] ?? "") ?></h3>
-        <p><?= nl2br(safe($n["content"] ?? "")) ?></p>
-        <form method="post" action="delete.php">
-          <input type="hidden" name="idx" value="<?= (int)$i ?>">
-          <button>Eintrag löschen</button>
-        </form>
-      </article>
-    <?php endforeach; ?>
+    
   </section>
 </main>
 </body>

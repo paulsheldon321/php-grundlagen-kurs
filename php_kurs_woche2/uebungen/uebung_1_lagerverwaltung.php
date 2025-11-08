@@ -6,7 +6,8 @@ declare(strict_types=1);
  * 2) Berechne den Gesamtwert.
  * 3) Gib alle Artikel formatiert aus.
  */
-?><!doctype html>
+?>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
@@ -15,9 +16,9 @@ declare(strict_types=1);
   <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-<header><h1>Übung 1 – Lagerverwaltung</h1></header>
-<main class="container">
-  <!-- TODO: Dein Code -->
-</main>
+  <header><h1>Übung 1 – Lagerverwaltung</h1></header>
+  <main class="container">
+    <!-- TODO: Dein Code -->
+  </main>
 </body>
 </html>
