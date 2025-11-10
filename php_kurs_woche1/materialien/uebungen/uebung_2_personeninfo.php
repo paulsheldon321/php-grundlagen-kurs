@@ -6,6 +6,11 @@ declare(strict_types=1);
  * 2) Gib einen formatierten Satz aus (HTML + CSS).
  * 3) Bonus: Rechne ein Geburtsjahr aus.
  */
+
+$name = "Paul";
+$alter = 75;
+$stadt = "Los Angeles";
+$geburtsjahr = date("Y") - $alter;
 ?>
 <!doctype html>
 <html lang="de">
@@ -18,7 +23,11 @@ declare(strict_types=1);
 <body>
   <header><h1>Übung 2 – Personeninfo</h1></header>
   <main class="container">
-    <!-- TODO -->
+    <p>
+      <?php
+        echo "Mein Name ist $name, ich bin $alter Jahre alt und komme aus $stadt. Ich wurde im Jahr $geburtsjahr geboren.";
+      ?>
+    </p>
   </main>
 </body>
 </html>
