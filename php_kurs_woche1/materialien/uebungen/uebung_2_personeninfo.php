@@ -23,9 +23,9 @@ $geburtsjahr = date("Y") - $alter;
 <body>
   <header><h1>Übung 2 – Personeninfo</h1></header>
   <main class="container">
-    <p>
-      <?php
-        echo "Mein Name ist $name, ich bin $alter Jahre alt und komme aus $stadt. Ich wurde im Jahr $geburtsjahr geboren.";
+    <! -- TODO -- >
+    <p><?php echo "Mein Name ist $name, ich bin $alter Jahre alt und komme aus $stadt. 
+        Ich wurde im Jahr $geburtsjahr geboren.";
       ?>
     </p>
   </main>
