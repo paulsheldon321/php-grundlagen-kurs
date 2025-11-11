@@ -45,6 +45,15 @@
 
         echo '<p>Ein TAG hat ', MIN_TAG, ' Minuten bzw. ', SEK_TAG, ' Sekunden.</p>';
 
+        // Verketten und Rechnen
+
+        $zahl = 5;
+        $nochEineZahl = 37;
+
+        echo "<p>Die Summe der Zahlen $zahl und $nochEineZahl ergibt: " . $zahl + $nochEineZahl . "</p>";
+
+        
+
     ?>
 </body>
 </html>
