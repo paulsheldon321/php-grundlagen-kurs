@@ -13,8 +13,6 @@ function hallo($name) {
 function summe($a, $b) {
   $erg = $a + $b;
   return $erg;
-
-  
 }
 
 // fixe Datentypen
