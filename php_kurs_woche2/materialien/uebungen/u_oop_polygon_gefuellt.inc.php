@@ -8,8 +8,10 @@ class PolygonGefuellt
     private ?Punkt $mitte;
     private ?Punkt $ende;
  
+    /* Konstruktor mit folgenden Eigenschaften */
     public function __construct(array $punkte = [], private string $farbe = '')
     {
+        /* wenn punkt[0] existiert dann punkt[0] für das Objekt start benutzen , ansonsten null */
         $this->start = $punkte[0] ?? null;
         $this->mitte = $punkte[1] ?? null;
         $this->ende  = $punkte[2] ?? null;
@@ -31,10 +33,11 @@ class PolygonGefuellt
  
     public function __toString(): string
     {
+        /* wenn start, mitte und ende nicht existiert dann "Keine Punkte" anzeigen */
         if ($this->start === null && $this->mitte === null && $this->ende === null) {
             return "(Keine Punkte)";
         }
- 
+        
         return "($this->start) | ($this->mitte) | ($this->ende) - $this->farbe";
     }
 }

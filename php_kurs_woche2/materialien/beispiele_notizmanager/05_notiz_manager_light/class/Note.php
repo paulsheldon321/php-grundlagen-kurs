@@ -1,3 +1,22 @@
 <?php
 declare(strict_types=1);
 
+class Note
+{
+    public string $title;
+    public string $content;
+
+    public function __construct(string $title, string $content)
+    {
+        $this->title = $title;
+        $this->content = $content;
+    }
+
+    public function toArray(): array
+    {
+        return [
+            'title' => $this->title,
+            'content' => $this->content,
+        ];
+    }
+}

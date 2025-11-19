@@ -7,6 +7,7 @@ class Polygon
     private ?Punkt $mitte; // Objekt mitte
     private ?Punkt $ende; // Objekt ende
  
+    /* Konstruktor mit folgenden Eigenschaften */
     public function __construct(array $punkte = [])
     {
         /* Array */
