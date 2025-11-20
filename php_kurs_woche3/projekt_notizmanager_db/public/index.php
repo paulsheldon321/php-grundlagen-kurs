@@ -50,10 +50,17 @@ $notes = getAllNotes($pdo);
             <h2>Einträge</h2>
             <table>
                 <thead>
+                    <tr>
+                        <th>Titel</th>
+                        <th>Kategorie</th>
+                        <th>Datum</th>
+                        <th>Aktionen</th>
+                    </tr>
+                    </thead>
                     <?php foreach ($notes as $n): ?>
                     <tr>
                         <td><?= safe($n->title) ?></td>
-                        <td><?= safe($n->category) ?></td>
+                        <td><?= $n->category ?></td>
                         <td><?= safe($n->created_at) ?></td>
                         <td>
                             <a href="edit.php?id=<?= (int)$n->id ?>" class="button">Bearbeiten</a>
@@ -63,7 +70,7 @@ $notes = getAllNotes($pdo);
                 <tbody>
                     
                 </tbody>
-                </thead>
+                
             </table>
         </section>
     </main>

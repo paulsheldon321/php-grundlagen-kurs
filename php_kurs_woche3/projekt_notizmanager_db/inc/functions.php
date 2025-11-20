@@ -12,5 +12,10 @@ function getAllNotes(PDO $pdo):array {
 }
 
 function safe(string $s): string {
-    return htmlspecialchars($s, ENT_QUOTES / ENT_SUBSTITUTE, 'UTF-8');
+    return htmlspecialchars($s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+}
+
+function addNote(PDO $pdo, string $title, string $content, ?int $categoryId = null) :void {
+    $stmt = $pdo->prerare('INSERT INTO notes(title, content, category_id) VALUES (:t, :c, :cat)');
+    $stmt->execute([':t' => $title, ':c' => $content, ':cat' => $categoryId]);
 }
