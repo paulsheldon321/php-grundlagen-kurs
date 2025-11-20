@@ -70,7 +70,6 @@ $notes = getAllNotes($pdo);
                 <tbody>
                     
                 </tbody>
-                
             </table>
         </section>
     </main>

@@ -16,6 +16,13 @@ function safe(string $s): string {
 }
 
 function addNote(PDO $pdo, string $title, string $content, ?int $categoryId = null) :void {
-    $stmt = $pdo->prerare('INSERT INTO notes(title, content, category_id) VALUES (:t, :c, :cat)');
+    $stmt = $pdo->prepare('INSERT INTO notes(title, content, category_id) VALUES (:t, :c, :cat)');
     $stmt->execute([':t' => $title, ':c' => $content, ':cat' => $categoryId]);
+}
+
+function findNote(PDO $pdo, int $id): ?object {
+    $stmt = $pdo->prepare('SELECT * FROM notes WHERE id=:id');
+    $stmt->execute([':id' => $id]);
+    $row = $stmt->fetch();
+    return $row ?: null;
 }
