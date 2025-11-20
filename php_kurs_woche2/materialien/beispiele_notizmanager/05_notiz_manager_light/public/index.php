@@ -57,6 +57,5 @@ $notes = load_notes();
     <?php endif; ?>
 
 </main>
-
 </body>
 </html>
