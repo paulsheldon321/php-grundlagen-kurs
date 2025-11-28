@@ -1,0 +1,180 @@
+/* Root variables */
+:root {
+    --bg: #f6f8fb;
+    --fg: #111;
+    --muted: #6b7280;
+    --primary: #2563eb;
+    --card: #fff;
+    --border: #e5e7eb;
+    --danger: #dc2626;
+}
+
+/* Reset and box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.5 system-ui, sans-serif;
+}
+
+/* Header */
+header {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 18px;
+}
+
+/* Container */
+.container {
+    max-width: 980px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+/* Card */
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    margin-bottom: 16px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 5rem;
+}
+
+nav li:first-child {
+    margin-left: -2rem;
+}
+
+/* Typography */
+label {
+    font-weight: 500;
+}
+
+/* Inputs, selects, textarea, buttons */
+input, textarea, select, button {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+/* Buttons */
+button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Alerts and text */
+.alert {
+    background: #fff3cd;
+    border: 1px solid #ffe69c;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.text-muted {
+    color: var(--muted);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+/* Forms inside cards */
+.card form {
+    padding: 8px 0;
+}
+
+/* Standard form span for text inputs, selects, textarea */
+.card form span {
+    display: flex;
+    flex-direction: column; /* label above input for text/number/date */
+    margin-bottom: 12px;
+}
+
+/* Labels */
+.card form label {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* Radio / Checkbox group */
+.card form span.radio-checkbox {
+    display: flex;            /* horizontal layout */
+    flex-direction: row;       /* input left, label right */
+    align-items: center;       /* vertically align with input */
+    gap: 8px;                  /* spacing between input and label */
+    margin-bottom: 8px;        /* spacing between each row */
+}
+
+/* Shrink radios / checkboxes */
+.card form input[type="radio"],
+.card form input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/* Buttons inline */
+.card form .form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.card form .form-actions button,
+.card form .form-actions a.button {
+    width: auto;  /* prevent full width */
+    flex: none;
+}
+
+/* Smaller padding and font for inputs/buttons */
+.card form input,
+.card form textarea,
+.card form select,
+.card form button {
+    padding: 6px 8px;
+    font-size: 0.95rem;
+}
