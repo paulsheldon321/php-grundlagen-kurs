@@ -25,10 +25,7 @@ foreach ($posts as $post) {
     }
 }
 
-
-
 ?>
-
 <main class="container">
     <?php if ($_SESSION): ?>
         <p>Hallo <b><?= $user->users_forename ?></b>, willkommen zu deinem Blog!</p>
@@ -49,8 +46,7 @@ foreach ($posts as $post) {
                 <div style="padding-bottom: 0.5rem; padding-left:0.5rem;"><strong><?= htmlspecialchars($post->posts_header) ?></strong></div>
                 <div class="post-row">
                     <!-- Left content: header + meta -->
-
-
+                    
                     <div class="post-meta <?= $borderClass ?>">
                         <small>
                             Autor: <?= htmlspecialchars($_SESSION['email'] ?? 'Unbekannt') ?><br>

@@ -3,8 +3,8 @@
         <ul>
             <li><a href="<?= BASE_URL ?>index.php">Startseite</a></li>
             <?php if (isset($_SESSION['email'])): ?>
-                <li><a href="<?= BASE_URL ?>posts/post_create.php">Post</a></li>
-                <li><a href="<?= BASE_URL ?>category/cat_create.php">Kategorie</a></li>
+                <li><a href="<?= BASE_URL ?>posts/post_create.php">Post(s)</a></li>
+                <li><a href="<?= BASE_URL ?>category/cat_create.php">Kategorie(s)</a></li>
             <?php endif; ?>
             <?php if (empty($_SESSION['email'])): ?>
                 <li><a href="<?= BASE_URL ?>user/register.php">Registrieren</a></li>

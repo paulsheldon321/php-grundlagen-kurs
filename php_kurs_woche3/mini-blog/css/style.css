@@ -519,3 +519,120 @@ button.inline-btn {
 .border-default {
     border-left: 4px solid #ddd;
 }
+
+.table-single-line {
+    max-width: 300px;
+    /* optional: set max width for the cell */
+    padding: 10px;
+    white-space: nowrap;
+    /* keep text on a single line */
+    overflow: hidden;
+    /* hide overflow */
+    text-overflow: ellipsis;
+    /* show ... for overflowing text */
+    text-align: center;
+    /* center horizontally */
+}
+
+.post-edit-btn,
+.post-delete-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+    /* for <a> */
+    box-sizing: border-box;
+    /* include padding in width/height */
+}
+
+.post-edit-btn {
+    background-color: #007bff;
+    margin-right: 4px;
+}
+
+.post-delete-btn {
+    background-color: #d9534f;
+    border: none;
+    /* only for button */
+}
+
+/* Container for the collapsible box */
+.custom-details {
+    width: 70%;
+    margin: 0 auto 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Summary styling */
+.custom-details summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    display: block;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Content inside details */
+.custom-details[open] summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.custom-details div {
+    padding: 12px 16px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #f9f9f9;
+}
+
+/* html {
+    height: 100%;
+    background-image: url("../asset/background.jpg");
+    /* update */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* optional 
+}
+
+body {
+    height: 100%;
+    background: transparent;
+    /* make sure body doesn’t hide html background 
+    margin: 0;
+    padding: 0;
+}
+
+ header {
+    background-image: url("../asset/header.jpg");
+    /* change file 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    /* space inside header 
+    color: white;
+    optional 
+} */
